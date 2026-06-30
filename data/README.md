@@ -1,12 +1,15 @@
-# Data Layer: World Development Indicators (WDI)
+# Data Provenance & Access Guide
 
-Due to storage policies and the volume of the primary source files from the World Bank database, the raw datasets used in this research are not hosted directly within this GitHub repository.
+This directory documents the source and process of accessing the raw datasets utilized in this research project.
 
-### Dataset Access
-The panel of historical macroeconomic data is publicly hosted and documented on Kaggle:
-* **Direct Link:** [World Development Indicators - Nov 2025](https://www.kaggle.com/datasets/nadyaayar/world-development-indicators-nov-2025)
+## Dataset Source
+The primary data is derived from the World Bank's **World Development Indicators (WDI)**, a definitive collection of international metrics on development and economic growth. 
 
-### Files Required for Local Execution:
-To execute the end-to-end automated pipeline ('main.py'), download the following files from the Kaggle link above:
-1. 'WDICSV.csv' - Contains the raw time-series for the indicators across all nations and years.
-2. 'WDICountry.csv' - Contains country-level metadata for geographical region and income group stratification.
+To ensure reproducibility, the exact snapshot of the data used in this pipeline is hosted on Kaggle:
+* **Dataset Link:** [World Development Indicators - Nov 2025](https://www.kaggle.com/datasets/nadyaayar/world-development-indicators-nov-2025)
+
+## Required Source Files
+The computational pipeline expects two specific files from the dataset to be present in the working environment:
+
+1. `WDICSV.csv`: Contains the raw time-series for the indicators across all nations and years.
+2. `WDICountry.csv`: Contains country-level metadata for geographical region and income group stratification.
